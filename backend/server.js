@@ -5,7 +5,7 @@ import userRoutes from './routes/userRoutes.js';
 import eventRoutes from './routes/eventRoutes.js';
 import registrationRoutes from './routes/registrationRoutes.js';
 
-dotenv.config();
+dotenv.config({ debug: true }); // Enable debug logging
 connectDB();
 
 const app = express();
